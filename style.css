@@ -97,3 +97,47 @@ button {
 button:hover {
   color: #90c0d1;
 }
+
+/* Responsive styles for mobile devices */
+@media (max-width: 500px) {
+  html {
+    font-size: 16px;
+    padding: 0;
+  }
+  .app-container {
+    width: 95vw;
+    min-width: 200px;
+    max-width: 98vw;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .app-circle {
+    width: 140px;
+    height: 140px;
+  }
+  .semi-circle {
+    width: 70px;
+    height: 140px;
+    border-width: 4px;
+  }
+  .left-side, .right-side {
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+  }
+  .right-side {
+    left: 70px;
+  }
+  .app-counter-box {
+    font-size: 180%;
+    top: 30px;
+  }
+  button {
+    top: 30px;
+    font-size: 100%;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+}
