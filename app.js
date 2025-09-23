@@ -36,3 +36,15 @@ const appTimer = () => {
   }
 }
 startBtn.addEventListener('click', appTimer);
+
+// Dark/Light mode toggle
+const modeToggle = document.getElementById('mode-toggle');
+modeToggle.addEventListener('click', () => {
+  const html = document.documentElement;
+  html.classList.toggle('light-mode');
+  if (html.classList.contains('light-mode')) {
+    modeToggle.textContent = '🌞 Light Mode';
+  } else {
+    modeToggle.textContent = '🌙 Dark Mode';
+  }
+});
