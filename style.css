@@ -122,7 +122,7 @@ button {
   border: none;
   background: none;
   outline: none;
-  color: #d8e9ef;
+  color: hsl(240, 94%, 20%);
 }
 
 button:hover {
